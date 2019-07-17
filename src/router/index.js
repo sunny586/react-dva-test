@@ -7,6 +7,7 @@ function RouterConfig({ history }) {
     <Router history={history}>
       <Switch>
         <Route path="/" exact component={asyncComponent(() => import('@/views'))} />
+        <Route path="/home" exact component={asyncComponent(() => import('@/views/home'))} />
       </Switch>
     </Router>
   )

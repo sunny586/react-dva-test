@@ -7,7 +7,7 @@ class LazyImage extends Component {
     this.state = {}
   }
 
-  lazyLoad(target) {
+  lazyLoad (target) {
     if (!!window.IntersectionObserver) {
       const observer = new IntersectionObserver(
         (entrances, observer) => {
@@ -29,11 +29,11 @@ class LazyImage extends Component {
     }
   }
 
-  componentDidMount() {
+  componentDidMount () {
     this.lazyLoad(this.imgRef)
   }
 
-  render() {
+  render () {
     return !!window.IntersectionObserver ? (
       <img
         alt="alt"
@@ -43,8 +43,8 @@ class LazyImage extends Component {
         ref={el => (this.imgRef = el)}
       />
     ) : (
-      <img alt="alt" style={this.props.style} src={this.props.src} />
-    )
+        <img alt="alt" style={this.props.style} src={this.props.src} />
+      )
   }
 }
 
