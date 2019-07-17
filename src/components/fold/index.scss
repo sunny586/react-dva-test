@@ -1,0 +1,18 @@
+.yui-fold-item {
+  background-color: #fff;
+  font-size: 0.32rem;
+  padding: 0.36rem;
+  border-radius: 0.04rem;
+}
+.yui-fold-item .child-list {
+  margin-top: 0.2rem;
+  font-size: 0.28rem;
+}
+.yui-fold-item .child-list > li {
+  height: 1rem;
+  line-height: 1rem;
+  border-bottom: 1px solid #eee;
+}
+.yui-fold-item .child-list > li:last-child {
+  border-bottom: none;
+}
