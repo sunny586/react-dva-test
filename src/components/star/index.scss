@@ -1,0 +1,30 @@
+.star {
+  display: inline-block;
+  position: relative;
+  bottom: 0.06rem;
+  > .ipt {
+    position: relative;
+    margin-right: 0.1rem;
+    border: 0;
+    background: transparent;
+    color: gold;
+    transition: color 0.8s;
+    &:nth-of-type(1) {
+      display: none;
+    }
+    &:before {
+      position: absolute;
+      content: '★';
+      left: -1px;
+      top: 0;
+      font-size: 0.28rem;
+      height: 100%;
+      width: 100%;
+      background: #fff;
+      cursor: pointer;
+    }
+    &:checked ~ .ipt {
+      color: #666;
+    }
+  }
+}
